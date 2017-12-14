@@ -1,0 +1,14 @@
+*.pyc
+*.swp
+*.swo
+*.sqlite3
+migrations/
+__pycache__
+.idea/
+
+*.local
+*.log
+yarn.lock
+.vscode/
+.env.sh
+constants.json
