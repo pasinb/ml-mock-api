@@ -4,7 +4,6 @@ from django.utils import timezone
 # Create your models here.
 
 class ScmUser(models.Model):
-
     # user_type_id = models.BigIntegerField() #TODO
     username = models.CharField(max_length=128, null=True)
     password = models.CharField(max_length=64, null=True)
@@ -19,9 +18,9 @@ class ScmUser(models.Model):
     # enable
     # login_failed
     create_date = models.DateField(auto_now_add=True)
-    create_by = models.CharField(max_length=128)
+    create_by = models.CharField(max_length=128, blank=True)
     update_date = models.DateField(auto_now=True)
-    update_by = models.CharField(max_length=128)
+    update_by = models.CharField(max_length=128, blank=True)
 
     def __str__(self):
         return self.username

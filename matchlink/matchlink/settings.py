@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mockApi',
-    'rest_framework'
+    'rest_framework',
+    'django_extensions',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE = [
@@ -89,6 +91,13 @@ DATABASES = {
         'PORT': '5432',
     },
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'mydatabase',
+#     }
+# }
 
 
 # Password validation
